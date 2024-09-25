@@ -1,8 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Image Analyzer Tool
+
+This project is an **Image Analyzer Tool** developed using **Next.js** and integrates with the **ChatGPT API**, along with other services for image analysis and processing. The tool allows users to upload images and receive detailed analysis and feedback about the content within the image, leveraging the power of modern AI technologies.
+
+## Features
+
+- **Image Upload & Processing**: Users can upload images which are processed using various APIs, including image recognition and metadata extraction.
+- **AI-Powered Analysis**: The tool uses the **ChatGPT API** to provide insights, descriptions, and explanations of image content.
+- **Real-time Updates**: Leveraging the built-in capabilities of **Next.js**, the page auto-updates as new data is received, giving users immediate feedback.
+- **Optimized Performance**: Integrated with **next/font** to optimize font loading and ensure fast, seamless user experiences.
+- **Scalable & Deployed on Vercel**: Deployed on the **Vercel Platform** for easy scalability, performance, and hassle-free maintenance.
 
 ## Getting Started
 
-First, run the development server:
+### Development Server
+
+To start the development server, run:
 
 ```bash
 npm run dev
@@ -14,23 +26,29 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once started, open [http://localhost:3000](http://localhost:3000) in your browser to interact with the app.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+You can begin by modifying the main logic in `app/page.js`. The tool supports **live reloading**, so changes will reflect immediately.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Prerequisites
 
-## Learn More
+- **Node.js** and **npm** (or **yarn** or **pnpm**)
+- API access to the **ChatGPT API** and other image processing APIs (e.g., **AWS Rekognition**, **Google Vision API**, etc.)
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Clone the repository and install the necessary dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+git clone https://github.com/Saipradyumnagoud/image-analyzer-tool.git
+cd image-analyzer-tool
+npm install
+```
 
-## Deploy on Vercel
+Set up the required environment variables for API keys:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+# .env.local
+NEXT_PUBLIC_CHATGPT_API_KEY=<your-chatgpt-api-key>
+NEXT_PUBLIC_IMAGE_API_KEY=<your-image-api-key>
+```
